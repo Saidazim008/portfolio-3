@@ -1,0 +1,397 @@
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* HEADER */
+.header {
+    background-image: url(assets/php.png);
+    width: 100%;
+    height: 400px;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+
+
+
+}
+
+.text {
+
+    align-items: center;
+    padding-top: 200px;
+}
+
+
+.contaner {
+    width: 80%;
+    position: fixed;
+    top: 0;
+    right: 0px;
+    left: 0px;
+    background-color: #eff0f5;
+    color: black;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    text-align: center;
+    margin-left: 130px;
+    border-radius: 20px;
+
+}
+
+/* NAV */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+/* LOGO */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-circle {
+    background-color: #ff6a3d;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.logo-text {
+    color: #ff6a3d;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* MENU */
+.menu {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+.menu a:hover,
+.menu a.active {
+    color: #ff6a3d;
+}
+
+/* BUTTON */
+.btn {
+    background-color: #ff6a3d;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #e55b2f;
+
+
+
+}
+
+
+
+.profile-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #ff6f61;
+    /* asosiy doira rangi */
+    margin-right: 350px;
+    font-weight: 100px;
+}
+
+.profile-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.circle-top {
+    width: 160px;
+    /* avval 120px edi */
+    height: 160px;
+    top: -25px;
+    right: -25px;
+}
+
+.circle-bottom {
+    width: 100px;
+    /* avval 80px edi */
+    height: 100px;
+    bottom: -20px;
+    left: -20px;
+}
+
+
+/* section */
+
+.hero {
+    min-height: 100vh;
+    background-color: #eff0f5;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+    width: 100%;
+
+
+}
+
+.hero-container {
+    max-width: 700px;
+    width: 100%;
+    color: white;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* About tugma */
+.about-btn {
+    display: inline-block;
+    padding: 6px 16px;
+    border: 1px solid #ff7a18;
+    border-radius: 20px;
+    background-color: #eff0f5;
+    color: black;
+    font-size: 14px;
+    width: fit-content;
+}
+
+.about-btn:hover {
+    background: #ff7a18;
+    color: #000;
+
+}
+
+
+.about-btn.outline:hover {
+    background: #ff7a18;
+    color: #000;
+}
+
+/* Sarlavha */
+.hero h1 {
+    font-size: 32px;
+    line-height: 1.3;
+    font-weight: bold;
+}
+
+/* Subtitle */
+.subtitle {
+    color: #cbd5e1;
+    font-size: 16px;
+}
+
+/* Card */
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 25px;
+    border-radius: 14px;
+    backdrop-filter: blur(10px);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card-item span {
+    color: #ff7a18;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.card-item p {
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+/* Tugmalar */
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn.primary {
+    background: linear-gradient(135deg, #ff7a18, #ff9f1c);
+    color: #000;
+    padding: 12px 26px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.btn.primary:hover {
+    opacity: 0.85;
+}
+
+.btn.outline {
+    border: 1px solid #ff7a18;
+    padding: 12px 26px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+    background-color: #eff0f5;
+    color: black;
+}
+
+.btn.outline:hover {
+    background: #ff7a18;
+    color: #000;
+}
+
+/* menu  */
+
+.salom {
+    width: 100%;
+    height: 600px;
+    background-color: #eff0f5;
+    color: black;
+}
+
+.text2 {
+    text-align: center;
+    padding-top: 20px;
+    width: 600px;
+    margin-left: 400px;
+    background-color: #eff0f5;
+    color: black;
+
+}
+
+.div {
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+    text-align: center;
+    margin-left: 250px;
+    margin-top: 20px;
+
+}
+
+
+.div i {
+    font-size: 35px;
+
+}
+
+
+.div h1 {
+    font-size: 20px;
+
+}
+
+.divlar {
+    width: 200px;
+    height: 200px;
+    background-color: #eff0f5;
+    color: black;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.20);
+    border-radius: 20px;
+
+}
+
+.sonlar {
+    width: 150px;
+    height: 20px;
+    background-color: #e55b2f;
+    margin-left: 25px;
+    border-radius: 15px;
+}
+
+/* main */
+
+.main {
+    width: 100%;
+    height: 600px;
+    background-color: #eff0f5;
+    color: black;
+
+}
+
+.text3 {
+    text-align: center;
+    padding-top: 20px;
+    width: 600px;
+    margin-left: 400px;
+    color: white;
+
+}
+
+.img {
+
+    margin-left: 250px;
+    margin-top: 10px;
+
+}
+
+.part {
+    text-align: none;
+    color: #eff0f5;
+}
+
+
+.rasim {
+    width: 250px;
+    height: 250px;
+}
+
+.buton {
+    margin-left: 550px;
+    margin-top: 20px;
+    width: 100px;
+}
+
+/* footer */
+
+.footer {
+    width: 100%;
+    height: 600px;
+    background-color: #eff0f5;
+    color: black;
+
+}
+
+.contact {
+    width: 200px;
+    height: 250px;
+
+}
+
+.ohiri {
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+    margin-left: 150px;
+}
